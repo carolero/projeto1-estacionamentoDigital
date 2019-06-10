@@ -10,7 +10,7 @@ public class Vaga {
 	private int vagasIdoso;
 	private int vagasDeficiente;
 	private int vagasComuns;
-
+	
 	// Construtor
 	public Vaga(String tipoDeVaga, boolean disponibilidade) {
 		super();
@@ -69,5 +69,11 @@ public class Vaga {
 
 		return modelo;
 	}
+	
+	// Método para adicionar vagas de Idoso
+
+	// Método para adicionar vagas de Deficiente
+	
+	// Método para adicionar vagas comuns
 
 }
