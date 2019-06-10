@@ -1,11 +1,9 @@
 package br.com.zup.teste;
 
-import java.beans.FeatureDescriptor;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-import br.com.zup.modelo.EstacionamentoDois;
 import br.com.zup.modelo.Vaga;
 
 public class TesteVaga {
