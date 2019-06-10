@@ -12,9 +12,9 @@ public class Estacionamento {
 		
 		// Entrando no estacionamento
 		Calendar calendario = Calendar.getInstance();
-		calendario.set(Calendar.DAY_OF_MONTH, 1);
-		calendario.set(Calendar.HOUR_OF_DAY, 10);
-		calendario.set(Calendar.MINUTE, 20);
+		calendario.set(Calendar.DAY_OF_MONTH, 0);
+		calendario.set(Calendar.HOUR_OF_DAY, 0);
+		calendario.set(Calendar.MINUTE, 0);
 		
 		// Registrar a hora de entrada
 		carro.setDataEntrada(calendario.getTime());
@@ -22,9 +22,9 @@ public class Estacionamento {
 		
 		// Saindo do estacionamento
 		Calendar calendarioSaida = Calendar.getInstance();
-		calendarioSaida.set(Calendar.DAY_OF_MONTH, 1);
-		calendarioSaida.set(Calendar.HOUR_OF_DAY, 10);
-		calendarioSaida.set(Calendar.MINUTE, 36);
+		calendarioSaida.set(Calendar.DAY_OF_MONTH, 0);
+		calendarioSaida.set(Calendar.HOUR_OF_DAY, 0);
+		calendarioSaida.set(Calendar.MINUTE, 0);
 		carro.setDataSaida(calendarioSaida.getTime());
 		
 		// Registra o horário de saída
