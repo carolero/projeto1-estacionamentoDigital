@@ -8,9 +8,9 @@ public class VagaDeficiente extends Vaga {
 	private int quantidadeVagasDeficiente;
 
 	// Construtor
-	public VagaDeficiente(String tipoDeVaga, boolean disponibilidade, List<Vaga> vagas, List<Vaga> carros,
-			List<Vaga> motos, int quantidadeVagasDeficiente) {
-		super(tipoDeVaga, disponibilidade, vagas, carros, motos);
+	public VagaDeficiente(String tipoDeVaga, boolean disponibilidade,
+			int quantidadeVagasDeficiente) {
+		super(tipoDeVaga, disponibilidade);
 		this.quantidadeVagasDeficiente = quantidadeVagasDeficiente;
 	}
 
@@ -21,6 +21,18 @@ public class VagaDeficiente extends Vaga {
 
 	public void setQuantidadeVagasDeficiente(int quantidadeVagasDeficiente) {
 		this.quantidadeVagasDeficiente = quantidadeVagasDeficiente;
+	}
+	
+	// Método de calculo para vagas deficiente
+	public int quantidadeVagasDeficiente (int quantidadeTotal) {
+		
+		int vagasDeficiente = 0;
+		
+		// Calculo
+		vagasDeficiente = (quantidadeTotal * 2) / 100;
+		System.out.println("A quantidade de vagas para deficientes é de: " + vagasDeficiente);
+		
+		return vagasDeficiente;
 	}
 
 }

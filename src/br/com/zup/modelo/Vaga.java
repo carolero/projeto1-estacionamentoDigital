@@ -3,22 +3,19 @@ package br.com.zup.modelo;
 import java.util.List;
 
 public class Vaga {
-	
+
 	// Atributos de vaga
 	private String tipoDeVaga;
 	private boolean disponibilidade;
-	private List<Vaga> vagas;
-	private List<Vaga> carros;
-	private List<Vaga> motos;
+	private int vagasIdoso;
+	private int vagasDeficiente;
+	private int vagasComuns;
 
 	// Construtor
-	public Vaga(String tipoDeVaga, boolean disponibilidade, List<Vaga> vagas, List<Vaga> carros, List<Vaga> motos) {
+	public Vaga(String tipoDeVaga, boolean disponibilidade) {
 		super();
 		this.tipoDeVaga = tipoDeVaga;
 		this.disponibilidade = disponibilidade;
-		this.vagas = vagas;
-		this.carros = carros;
-		this.motos = motos;
 	}
 
 	// Getters & Setters
@@ -29,7 +26,7 @@ public class Vaga {
 	public void setTipoDeVaga(String tipoDeVaga) {
 		this.tipoDeVaga = tipoDeVaga;
 	}
-	
+
 	public boolean isDisponibilidade() {
 		return disponibilidade;
 	}
@@ -37,40 +34,39 @@ public class Vaga {
 	public void setDisponibilidade(boolean disponibilidade) {
 		this.disponibilidade = disponibilidade;
 	}
-	
-	public List<Vaga> getVagas() {
-		return vagas;
+
+	public int getVagasIdoso() {
+		return vagasIdoso;
 	}
 
-	public void setVagas(List<Vaga> vagas) {
-		this.vagas = vagas;
+	public void setVagasIdoso(int vagasIdoso) {
+		this.vagasIdoso = vagasIdoso;
 	}
 
-	public List<Vaga> getCarros() {
-		return carros;
+	public int getVagasDeficiente() {
+		return vagasDeficiente;
 	}
 
-	public void setCarros(List<Vaga> carros) {
-		this.carros = carros;
+	public void setVagasDeficiente(int vagasDeficiente) {
+		this.vagasDeficiente = vagasDeficiente;
 	}
 
-	public List<Vaga> getMotos() {
-		return motos;
+	public int getVagasComuns() {
+		return vagasComuns;
 	}
 
-	public void setMotos(List<Vaga> motos) {
-		this.motos = motos;
+	public void setVagasComuns(int vagasComuns) {
+		this.vagasComuns = vagasComuns;
 	}
 
 	// Método to String
 	@Override
 	public String toString() {
 		String modelo = "";
-		
-		
+
 		modelo += "Tipo da vaga -> " + this.getTipoDeVaga() + "\n";
-		modelo += "Disponibilidade da vaga -> " + this.getTipoDeVaga() + "\n";
-		
+		modelo += "Disponibilidade da vaga -> " + this.isDisponibilidade() + "\n";
+
 		return modelo;
 	}
 

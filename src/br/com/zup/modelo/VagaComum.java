@@ -8,9 +8,8 @@ public class VagaComum extends Vaga {
 	private int quantidadeVagasComuns;
 
 	// Construtor
-	public VagaComum(String tipoDeVaga, boolean disponibilidade, List<Vaga> vagas, List<Vaga> carros, List<Vaga> motos,
-			int quantidadeVagasComuns) {
-		super(tipoDeVaga, disponibilidade, vagas, carros, motos);
+	public VagaComum(String tipoDeVaga, boolean disponibilidade, int quantidadeVagasComuns) {
+		super(tipoDeVaga, disponibilidade);
 		this.quantidadeVagasComuns = quantidadeVagasComuns;
 	}
 	
