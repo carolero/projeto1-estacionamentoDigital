@@ -1,5 +1,5 @@
 package br.com.zup.modelo;
 
-public class VagasComum {
+public class VagaIdoso {
 
 }
