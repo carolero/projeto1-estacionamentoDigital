@@ -1,13 +1,16 @@
 package br.com.zup.modelo;
 
+import java.util.List;
+
 public class VagaComum extends Vaga {
 
 	// Atributos
 	private int quantidadeVagasComuns;
 
 	// Construtor
-	public VagaComum(String tipoDeVaga, boolean disponibilidade, int quantidadeVagasComuns) {
-		super(tipoDeVaga, disponibilidade);
+	public VagaComum(String tipoDeVaga, boolean disponibilidade, List<Vaga> vagas, List<Vaga> carros, List<Vaga> motos,
+			int quantidadeVagasComuns) {
+		super(tipoDeVaga, disponibilidade, vagas, carros, motos);
 		this.quantidadeVagasComuns = quantidadeVagasComuns;
 	}
 	
