@@ -48,7 +48,7 @@ public class Estacionamento {
 		// Iniciando Scanner
 		Scanner scan = new Scanner(System.in);
 		
-		System.out.println("Que dia a mosto está entrando no estacionamento?");
+		System.out.println("Que dia a moto está entrando no estacionamento?");
 		byte dia = scan.nextByte();
 		System.out.println("Que hora a moto está entrando?");
 		byte hora = scan.nextByte();
@@ -61,14 +61,14 @@ public class Estacionamento {
 		calendarioMoto.set(Calendar.MINUTE, min);
 		
 		moto.setDataEntrada(calendarioMoto.getTime());
-		System.out.println("A moto entou às " + moto.getDataEntrada());
+		System.out.println("A moto entrou às " + moto.getDataEntrada());
 		
 		// Saída
 		System.out.println("Que dia a moto saiu?");
 		dia = scan.nextByte();
 		System.out.println("Em que horas?");
 		hora = scan.nextByte();
-		System.err.println("E em que minuto?");
+		System.out.println("E em que minuto?");
 		min = scan.nextByte();
 		
 		calendarioMoto.set(Calendar.DAY_OF_MONTH, dia);
