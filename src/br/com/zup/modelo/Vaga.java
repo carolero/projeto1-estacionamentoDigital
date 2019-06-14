@@ -71,9 +71,9 @@ public class Vaga {
 	}
 	
 	// Método para adicionar vagas de Idoso
-
+		
 	// Método para adicionar vagas de Deficiente
-	
+		
 	// Método para adicionar vagas comuns
-
+		
 }

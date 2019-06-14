@@ -8,7 +8,7 @@ public class HorasTeste {
 	public static void main(String[] args) {
 		// Classe para testar as horas (entrada e saída)
 		
-	Calendar calendario = Calendar.getInstance();
+		Calendar calendario = Calendar.getInstance();
 		
 		calendario.set(Calendar.DAY_OF_MONTH, 0);
 		calendario.set(Calendar.MONTH, 0);

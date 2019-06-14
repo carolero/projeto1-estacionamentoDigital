@@ -12,8 +12,8 @@ public class Estacionamento {
 		
 		// Entrando no estacionamento
 		Calendar calendario = Calendar.getInstance();
-		calendario.set(Calendar.DAY_OF_MONTH, 0);
-		calendario.set(Calendar.HOUR_OF_DAY, 0);
+		calendario.set(Calendar.DAY_OF_MONTH, 4);
+		calendario.set(Calendar.HOUR_OF_DAY, 12);
 		calendario.set(Calendar.MINUTE, 0);
 		
 		// Registrar a hora de entrada
@@ -22,8 +22,8 @@ public class Estacionamento {
 		
 		// Saindo do estacionamento
 		Calendar calendarioSaida = Calendar.getInstance();
-		calendarioSaida.set(Calendar.DAY_OF_MONTH, 0);
-		calendarioSaida.set(Calendar.HOUR_OF_DAY, 0);
+		calendarioSaida.set(Calendar.DAY_OF_MONTH, 4);
+		calendarioSaida.set(Calendar.HOUR_OF_DAY, );
 		calendarioSaida.set(Calendar.MINUTE, 0);
 		carro.setDataSaida(calendarioSaida.getTime());
 		
@@ -47,7 +47,8 @@ public class Estacionamento {
 		
 		// Iniciando Scanner
 		Scanner scan = new Scanner(System.in);
-		
+		System.out.println("###########################################\n"
+				+ "###########################################\n");
 		System.out.println("Que dia a moto está entrando no estacionamento?");
 		byte dia = scan.nextByte();
 		System.out.println("Que hora a moto está entrando?");
